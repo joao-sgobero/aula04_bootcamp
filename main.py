@@ -36,11 +36,27 @@
 
 # 04) Dado um dicionário, criar listas separadas para suas chaves e valores.
 
-dicionario = {"a": 1, "b": 2, "c": 3}
-lista_chave = dicionario.keys()
-lista_valor = dicionario.values()
+# dicionario = {"a": 1, "b": 2, "c": 3}
+# lista_chave = dicionario.keys()
+# lista_valor = dicionario.values()
 
-print(
-    lista_chave,
-    lista_valor
-)
+# print(
+#     lista_chave,
+#     lista_valor
+# )
+
+
+#===============================================
+
+# 5) Dada uma string, contar a frequência de cada caractere usando um dicionário.
+
+texto = "engenharia de dados"
+frequencia = {}
+
+for i in texto:
+    if i not in frequencia:
+        frequencia[i] = 1
+    else: 
+        frequencia[i] += 1
+        
+print(frequencia)
