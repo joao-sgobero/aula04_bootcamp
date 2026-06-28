@@ -26,8 +26,21 @@
 #===============================================
 
 # 3) Dado um dicionário de estoque de produtos, filtrar aqueles com quantidade maior que 0.
-estoque = {"Teclado": 10, "Mouse": 0, "Monitor": 3, "CPU": 0}
+# estoque = {"Teclado": 10, "Mouse": 0, "Monitor": 3, "CPU": 0}
 
-estoque_positivo = {produto: quantidade for produto, quantidade in estoque.items() if quantidade > 0}
+# estoque_positivo = {produto: quantidade for produto, quantidade in estoque.items() if quantidade > 0}
 
-print(estoque_positivo)
+# print(estoque_positivo)
+
+#===============================================
+
+# 04) Dado um dicionário, criar listas separadas para suas chaves e valores.
+
+dicionario = {"a": 1, "b": 2, "c": 3}
+lista_chave = dicionario.keys()
+lista_valor = dicionario.values()
+
+print(
+    lista_chave,
+    lista_valor
+)
