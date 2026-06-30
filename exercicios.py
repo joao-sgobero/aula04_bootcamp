@@ -21,13 +21,23 @@
 
 #Função sem parametro e com retorno
 
-from datetime import datetime
+# from datetime import datetime
 
 
-def hora_certa():
-    agora = datetime.now()
-    return f"{agora.hour:02d}:{agora.minute:02d}:{agora.second:02d}"
+# def hora_certa():
+#     agora = datetime.now()
+#     return f"{agora.hour:02d}:{agora.minute:02d}:{agora.second:02d}"
 
 
-hora = hora_certa()
-print(f"{hora}")
+# hora = hora_certa()
+# print(f"{hora}")
+
+# ----------------------------------------------------------------------------
+
+#Função com parametro e com retorno
+def conta_com_gorgerta(valor_conta, percentual_gorgeta):
+    valor_gorgeta = valor_conta * percentual_gorgeta
+    return valor_conta + valor_gorgeta
+
+valor_total = conta_com_gorgerta(485, 0.08)
+print(f"O valor final da conta é R${valor_total}")
